@@ -1,0 +1,22 @@
+{
+  "projects": {
+    "default": "portfolio-miten-staging",
+    "production": "portfolio-miten"
+  },
+  "targets": {
+    "portfolio-miten-staging": {
+      "hosting": {
+        "web": [
+          "miten-staging"
+        ]
+      }
+    },
+    "portfolio-miten": {
+      "hosting": {
+        "web": [
+          "mitenchauhan"
+        ]
+      }
+    }
+  }
+}

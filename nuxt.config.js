@@ -1,6 +1,7 @@
+require('dotenv').config();
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -44,6 +45,7 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
+    '@nuxtjs/firebase'
   ],
   /*
   ** Build configuration
@@ -53,6 +55,37 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+    }
+  },
+  firebase: {
+    config: {
+      production: {
+        apiKey: process.env.FB_PROD_APIKEY,
+        authDomain: process.env.FB_PROD_AUTHDOMAIN,
+        databaseURL: process.env.FB_PROD_DBURL,
+        projectId: process.env.FB_PROD_PROJECTID,
+        storageBucket: process.env.FB_PROD_STORAGE,
+        messagingSenderId: process.env.FB_PROD_MESSAGING,
+        appId: process.env.FB_PROD_APP,
+        measurementId: process.env.FB_PROD_MEASUREMENT
+      },
+      development: {
+        apiKey: process.env.FB_STAGING_APIKEY,
+        authDomain: process.env.FB_STAGING_AUTHDOMAIN,
+        databaseURL: process.env.FB_STAGING_DBURL,
+        projectId: process.env.FB_STAGING_PROJECTID,
+        storageBucket: process.env.FB_STAGING_STORAGE,
+        messagingSenderId: process.env.FB_STAGING_MESSAGING,
+        appId: process.env.FB_STAGING_APP,
+        measurementId: process.env.FB_STAGING_MEASUREMENT
+      }
+    },
+    onFirebaseHosting: true,
+    services: {
+      firestore: true,
+      storage: true,
+      performance: true,
+      analytics: true
     }
   }
 }
