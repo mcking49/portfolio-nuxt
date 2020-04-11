@@ -41,6 +41,25 @@
               <TextBtn url="/">Open in new tab</TextBtn>
             </div> -->
           </div>
+          <div class="rule w-full mt-16 bg-grey-dark h-px"></div>
+        </div>
+      </section>
+
+      <section class="text pt-8">
+        <div class="container">
+          <h3 class="text-teal-dark">character styles</h3>
+          <div class="flex flex-wrap flex-col justify-start items-start">
+            <div class="mt-4">
+              <h1>heading 1</h1>
+              <h2 class="mt-4">heading 2</h2>
+              <h3 class="mt-4">heading 3</h3>
+              <h4 class="mt-4">heading 4</h4>
+              <h5 class="mt-4">heading 5</h5>
+              <h6 class="mt-4">heading 6</h6>
+              <p class="mt-4">Body Copy</p>
+            </div>
+          </div>
+          <div class="rule w-full mt-16 bg-grey-dark h-px"></div>
         </div>
       </section>
     </main>
