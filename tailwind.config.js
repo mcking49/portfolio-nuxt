@@ -10,16 +10,16 @@ module.exports = {
       transparent: 'transparent',
       black: '#000000',
       white: '#FFFFFF',
+      grey: {
+        light: '#F1F1F1',
+        default: '#C5C6C7',
+        dark: '#9A9A9A'
+      },
       teal: {
         light: '#DEF2F1',
         default: '#3AAFA9',
         dark: '#213239',
         black: '#17252A'
-      },
-      grey: {
-        light: '#F1F1F1',
-        default: '#C5C6C7',
-        dark: '#9A9A9A'
       }
     },
     container: {

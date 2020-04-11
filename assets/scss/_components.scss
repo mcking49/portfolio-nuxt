@@ -1,8 +1,14 @@
 button {
-  @apply py-3 px-6 font-bold text-xs uppercase transition-all duration-200 ease-out shadow;
+  @extend .transition;
+  @apply py-3 px-6 font-bold text-xs uppercase shadow;
   width: 176px;
 
   &:focus {
     outline: none;
   }
+}
+
+a {
+  @extend .transition;
+  @apply inline-flex;
 }

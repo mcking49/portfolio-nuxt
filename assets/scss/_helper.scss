@@ -5,3 +5,7 @@
 .position-full {
   @apply inset-0 absolute w-full h-full;
 }
+
+.transition {
+  @apply transition-all duration-200 ease-out;
+}
