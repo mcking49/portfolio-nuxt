@@ -1,5 +1,5 @@
 <template>
-  <header ref="header" class="main-header fixed flex flex-row justify-between items-center top-0 left-0 w-full bg-transparent h-24 transition-all duration-300 ease-in-out">
+  <header ref="header" class="main-header fixed flex flex-row justify-between items-center top-0 left-0 w-full bg-transparent h-24 z-50 transition-all duration-300 ease-in-out">
     <div class="container">
       <div class="logo flex-none"></div>
       <nav class="flex flex-row justify-end flex-1 items-center">
