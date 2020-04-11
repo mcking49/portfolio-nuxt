@@ -100,5 +100,8 @@ export default {
       performance: true,
       analytics: true
     }
+  },
+  tailwindcss: {
+    exposeConfig: true
   }
 }

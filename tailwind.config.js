@@ -17,8 +17,8 @@ module.exports = {
         black: '#17252A'
       },
       grey: {
-        light: '#C5C6C7',
-        default: '#F1F1F1',
+        light: '#F1F1F1',
+        default: '#C5C6C7',
         dark: '#9A9A9A'
       }
     },
@@ -30,12 +30,13 @@ module.exports = {
       'sans': 'Roboto, sans-serif'
     },
     fontSize: {
-      'xxs': '0.5rem',
-      'xs': '0.75rem',
-      'base': '1rem',
-      'lg': '1.5rem',
-      'xl': '3rem',
-      '2xl': '4rem'
+      'xxs': '0.5rem',  // 8px
+      'xs': '0.75rem',  // 12px
+      'base': '1rem',   // 16px
+      'lg': '1.5rem',   // 24px
+      '2lg': '2rem',    // 32px
+      'xl': '3rem',     // 48px
+      '2xl': '4rem'     // 63px
     },
     extend: {
       inset: {
