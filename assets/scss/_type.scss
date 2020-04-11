@@ -3,29 +3,29 @@ html, body {
 }
 
 h1 {
-  @apply text-2xl font-bold text-teal uppercase;
+  @apply text-2xl font-bold text-teal uppercase leading-none;
 }
 
 h2 {
-  @apply text-xl font-bold text-teal-light uppercase;
+  @apply text-xl font-bold text-teal-light uppercase leading-none;
 }
 
 h3 {
-  @apply text-lg font-bold text-teal-light uppercase;
+  @apply text-lg font-bold text-teal-light uppercase leading-none;
 }
 
 h4 {
-  @apply text-base font-bold text-teal uppercase;
+  @apply text-base font-bold text-teal uppercase leading-none;
 }
 
 h5 {
-  @apply text-xs font-bold text-teal-dark uppercase;
+  @apply text-xs font-bold text-teal-dark uppercase leading-none;
 }
 
 h6 {
-  @apply text-xxs font-bold text-teal-dark uppercase;
+  @apply text-xxs font-bold text-teal-dark uppercase leading-none;
 }
 
 p, li, span {
-  @apply text-base font-normal text-teal-dark;
+  @apply text-base font-normal text-teal-dark leading-none;
 }
