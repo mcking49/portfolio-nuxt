@@ -1,0 +1,8 @@
+button {
+  @apply py-3 px-6 font-bold text-xs uppercase transition-all duration-200 ease-out shadow;
+  width: 176px;
+
+  &:focus {
+    outline: none;
+  }
+}

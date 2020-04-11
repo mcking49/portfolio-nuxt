@@ -12,11 +12,27 @@
           <div class="flex flex-wrap">
             <div v-for="(color, index) in colorsArray" :key="index" class="mt-4 mr-4 flex flex-col items-center justify-center">
               <h5>{{ color.label }}</h5>
-              <div class="h-20 w-20 mt-2" :style="{backgroundColor: color.hex}"></div>
+              <div class="h-20 w-20 mt-1" :style="{backgroundColor: color.hex}"></div>
               <p class="font-light mt-2">{{ color.hex }}</p>
             </div>
           </div>
           <div class="rule w-full mt-16 bg-grey-dark h-px"></div>
+        </div>
+      </section>
+
+      <section class="components pt-8">
+        <div class="container">
+          <h3 class="text-teal-dark">call-to-actions</h3>
+          <div class="flex flex-wrap">
+            <div class="mt-4 mr-4 flex flex-col items-center justify-center">
+              <h5>primary button</h5>
+              <PrimaryBtn class="mt-1">button</PrimaryBtn>
+            </div>
+            <div class="mt-4 mr-4 flex flex-col items-center justify-center">
+              <h5>secondary button</h5>
+              <SecondaryBtn class="mt-1">button</SecondaryBtn>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -27,6 +43,8 @@
 import Vue from 'vue';
 import { theme } from '~/tailwind.config';
 import _ from 'lodash';
+import PrimaryBtn from '~/components/PrimaryBtn.vue';
+import SecondaryBtn from '~/components/SecondaryBtn.vue';
 
 interface ThemeColor {
   label: string;
@@ -35,6 +53,11 @@ interface ThemeColor {
 
 export default Vue.extend({
   layout: 'dev',
+
+  components: {
+    PrimaryBtn,
+    SecondaryBtn
+  },
 
   data() {
     return {

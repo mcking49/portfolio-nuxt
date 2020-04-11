@@ -39,8 +39,14 @@ module.exports = {
       '2xl': '4rem'     // 63px
     },
     extend: {
+      boxShadow: {
+        default: '0 1px 3px 0 rgba(154, 154, 154, 1)'
+      },
       inset: {
         '1/2': '50%'
+      },
+      letterSpacing: {
+        '08': '0.08em'
       },
       screens: {
         '2xl': '1440px',
