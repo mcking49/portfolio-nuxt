@@ -11,7 +11,7 @@
     "start": "nuxt-ts start",
     "deploy:staging": "firebase deploy --only hosting:web -P default",
     "deploy:prod": "firebase deploy --only hosting:web -P production",
-    "deploy:all": "npm run deploy:staging && npm run deploy:prod"
+    "deploy:all": "npm run generate && npm run deploy:staging && npm run deploy:prod"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.4.0",
