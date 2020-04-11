@@ -12,3 +12,7 @@ a {
   @extend .transition;
   @apply inline-flex;
 }
+
+header {
+  @extend .transition;
+}

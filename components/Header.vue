@@ -1,0 +1,46 @@
+<template>
+  <header ref="header" class="main-header fixed flex flex-row justify-between items-center top-0 left-0 w-full bg-transparent h-24">
+    <div class="container">
+      <div class="logo flex-none"></div>
+      <nav class="flex flex-row justify-end flex-1 items-center">
+        <TextBtn url="/" hash="#about" class="ml-4">About</TextBtn>
+        <TextBtn url="/" hash="#projects" class="ml-4">Projects</TextBtn>
+      </nav>
+    </div>
+  </header>
+</template>
+
+<script lang="ts">
+import Vue from 'vue';
+import TextBtn from '~/components/TextBtn.vue';
+
+export default Vue.extend({
+  components: {
+    TextBtn
+  },
+
+  mounted() {
+    const header = this.$refs.header as Element;
+    window.addEventListener('scroll', (e) => {
+      if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  }
+});
+</script>
+
+<style lang="scss" scoped>
+@import '../assets/scss/helper';
+
+.main-header {
+  @extend .transition;
+
+  &.scrolled {
+    @apply bg-teal-black;
+    box-shadow: 0 2px 6px 0 rgba(44, 44, 44, 1);
+  }
+}
+</style>

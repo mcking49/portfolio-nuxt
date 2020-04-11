@@ -5,3 +5,7 @@
 @import 'main';
 
 @tailwind utilities;
+
+.container {
+  min-height: 0;
+}

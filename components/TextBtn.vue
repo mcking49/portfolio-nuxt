@@ -4,7 +4,7 @@
       <slot></slot>
       <OpenExternal class="ml-1" />
     </a>
-    <nuxt-link v-else :to="url"><slot></slot></nuxt-link>
+    <nuxt-link v-else :to="{path: url, hash}" class="internal-link"><slot></slot></nuxt-link>
   </div>
 </template>
 
@@ -15,7 +15,8 @@ import OpenExternal from '~/components/icons/OpenExternal.vue';
 export default Vue.extend({
   props: {
     external: {type: Boolean, default: false},
-    url: {type: String, required: true}
+    url: {type: String, required: true},
+    hash: {type: String, default: ''}
   },
 
   components: {
@@ -30,6 +31,14 @@ a {
 
   &:hover {
     @apply text-grey;
+  }
+
+  &.internal-link {
+    @apply text-teal-light;
+
+    &:hover {
+      @apply text-teal;
+    }
   }
 }
 </style>

@@ -45,7 +45,7 @@ export default Vue.extend({
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
+/* .container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -74,5 +74,5 @@ export default Vue.extend({
 
 .links {
   padding-top: 15px;
-}
+} */
 </style>
