@@ -1,5 +1,5 @@
 <template>
-  <header ref="header" class="main-header fixed flex flex-row justify-between items-center top-0 left-0 w-full bg-transparent h-24">
+  <header ref="header" class="main-header fixed flex flex-row justify-between items-center top-0 left-0 w-full bg-transparent h-24 transition-all duration-300 ease-in-out">
     <div class="container">
       <div class="logo flex-none"></div>
       <nav class="flex flex-row justify-end flex-1 items-center">
@@ -33,11 +33,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/helper';
-
 .main-header {
-  @extend .transition;
-
   &.scrolled {
     @apply bg-teal-black;
     box-shadow: 0 2px 6px 0 rgba(44, 44, 44, 1);
