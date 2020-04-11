@@ -1,0 +1,7 @@
+.position-center {
+  @apply absolute inset-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+.position-full {
+  @apply inset-0 absolute w-full h-full;
+}

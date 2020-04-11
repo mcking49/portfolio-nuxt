@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path');
 
 export default {
   mode: 'spa',
@@ -13,7 +14,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap' }
     ]
   },
   /*
@@ -24,6 +26,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/scss/tailwind.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -45,7 +48,8 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    '@nuxtjs/firebase'
+    '@nuxtjs/firebase',
+    'nuxt-purgecss'
   ],
   /*
   ** Build configuration
@@ -55,7 +59,16 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+    },
+    extractCss: true,
+    postcss: {
+      plugins: {
+        tailwindcss: path.resolve(__dirname, './tailwind.config.js')
+      }
     }
+  },
+  purgeCSS: {
+    mode: 'postcss'
   },
   firebase: {
     config: {

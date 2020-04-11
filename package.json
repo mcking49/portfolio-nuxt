@@ -23,6 +23,9 @@
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",
-    "@nuxtjs/tailwindcss": "^1.0.0"
+    "@nuxtjs/tailwindcss": "^1.0.0",
+    "node-sass": "^4.13.1",
+    "nuxt-purgecss": "^0.2.1",
+    "sass-loader": "^8.0.2"
   }
 }
