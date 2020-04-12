@@ -103,5 +103,22 @@ export default {
   },
   tailwindcss: {
     exposeConfig: true
+  },
+  router: {
+    scrollBehavior(to) {
+      if (to.hash) {
+        const el = document.querySelector(to.hash);
+
+        if (el) {
+          const header = document.getElementsByTagName('header')[0];
+          const top = el.offsetTop - header.offsetHeight;
+
+          return window.scrollTo({
+            top,
+            behavior: 'smooth'
+          });
+        }
+      }
+    }
   }
 }

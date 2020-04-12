@@ -8,7 +8,7 @@
       </svg>
       <div class="inner-container h-full w-full flex flex-row items-center">
         <div class="copy-container w-full">
-          <h2 class="text-teal-light text-center sm:text-left">Hello, I am</h2>
+          <h2 class="text-teal-light text-center uppercase sm:text-left">Hello, I am</h2>
           <h1 class="mt-4 xs:mt-6 sm:mt-2 text-center sm:text-left">Miten Chauhan</h1>
           <h3 class="mt-4 xs:mt-6 sm:mt-2 text-center sm:text-left">It's kind of like the word "me" and then the number ten</h3>
           <div class="btn-container w-full flex flex-col justify-center items-center mt-10 xs:mt-11 sm:mt-12 sm:flex-row sm:justify-between">
@@ -48,7 +48,7 @@ export default Vue.extend({
   min-width: 810px;
   height: 100%;
   transform: skew(32deg);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.025);
   position: absolute;
   left: 80%;
   z-index: 3;

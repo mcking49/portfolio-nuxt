@@ -22,6 +22,22 @@ a {
   @apply inline-flex;
 }
 
+section {
+  @apply py-9 bg-white overflow-hidden;
+
+  &.alt {
+    @apply bg-grey-light;
+  }
+
+  @media (min-width: 640px) {
+    @apply py-10;
+  }
+
+  @media (min-width: 1024px) {
+    @apply py-18;
+  }
+}
+
 .icon-btn {
   @apply rounded-full text-teal h-8 w-8;
 
@@ -40,5 +56,17 @@ a {
 
   @media (min-width: 1366px) {
     @apply h-18 w-18;
+  }
+}
+
+.row {
+  @apply grid grid-cols-1 gap-4;
+
+  @media (min-width: 640px) {
+    @apply grid-cols-4;
+  }
+
+  @media (min-width: 1024px) {
+    @apply grid-cols-12;
   }
 }
