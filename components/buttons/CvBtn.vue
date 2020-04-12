@@ -1,5 +1,5 @@
 <template>
-  <button>
+  <button class="icon-btn btn-style-none">
     <svg id="document_button" data-name="document button" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
       <g id="Ellipse_3" data-name="Ellipse 3" fill="none" stroke="currentColor" stroke-width="3">
         <circle cx="37.5" cy="37.5" r="37.5" stroke="none"/>

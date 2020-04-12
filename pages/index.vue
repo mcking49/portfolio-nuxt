@@ -32,7 +32,7 @@
       </div>
     </section>
 
-    <section id="projects"></section>
+    <!-- <section id="projects"></section> -->
   </div>
 </template>
 

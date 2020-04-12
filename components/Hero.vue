@@ -1,5 +1,5 @@
 <template>
-  <div class="hero h-screen w-screen bg-teal-black relative">
+  <div id="home" class="hero h-screen w-screen bg-teal-black relative">
     <div class="shape"></div>
 
     <div class="container relative h-full">

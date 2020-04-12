@@ -38,6 +38,10 @@ section {
   }
 }
 
+.btn-style-none {
+  @apply p-0 shadow-none;
+}
+
 .icon-btn {
   @apply rounded-full text-teal h-8 w-8;
 
