@@ -120,5 +120,14 @@ export default {
         }
       }
     }
+  },
+  pwa: {
+    manifest: {
+      name: 'Miten Chauhan'
+    },
+    meta: {
+      name: "Miten Chauhan",
+      theme_color: "#3AAFA9"
+    }
   }
 }
