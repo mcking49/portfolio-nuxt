@@ -3,15 +3,35 @@ html, body {
 }
 
 h1 {
-  @apply text-3xl font-bold text-teal uppercase leading-none;
+  @apply text-2lg font-bold text-teal uppercase leading-none;
+
+  @media (min-width: 375px) {
+    @apply text-3lg;
+  }
+
+  @media (min-width: 640px) {
+    @apply text-3xl;
+  }
 }
 
 h2 {
-  @apply text-xl font-bold text-teal-light uppercase leading-none;
+  @apply text-lg font-bold text-teal-light uppercase leading-none;
+
+  @media (min-width: 375px) {
+    @apply text-lg-2;
+  }
+
+  @media (min-width: 640px) {
+    @apply text-xl;
+  }
 }
 
 h3 {
-  @apply text-lg font-bold text-teal-light uppercase leading-none;
+  @apply text-base font-bold text-teal-light uppercase leading-tight;
+
+  @media (min-width: 640px) {
+    @apply text-lg;
+  }
 }
 
 h4 {

@@ -5,11 +5,15 @@ html, body {
 
 button {
   @extend .transition;
-  @apply py-3 px-6 font-bold text-xs uppercase shadow;
+  @apply py-2 px-6 font-bold text-xs uppercase shadow;
   width: 176px;
 
   &:focus {
     outline: none;
+  }
+
+  @media (min-width: 1366px) {
+    @apply py-3;
   }
 }
 
@@ -19,9 +23,22 @@ a {
 }
 
 .icon-btn {
-  @apply rounded-full text-teal;
+  @apply rounded-full text-teal h-8 w-8;
 
   &:hover {
-    @apply bg-teal text-teal-light
+    @apply bg-teal text-teal-light;
+  }
+
+  svg {
+    height: inherit;
+    width: inherit;
+  }
+
+  @media (min-width: 640px) {
+    @apply h-12 w-12;
+  }
+
+  @media (min-width: 1366px) {
+    @apply h-18 w-18;
   }
 }

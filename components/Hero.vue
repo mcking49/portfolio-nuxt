@@ -9,14 +9,14 @@
       <div class="inner-container h-full w-full flex flex-row items-center">
         <div class="copy-container w-full">
           <h2 class="text-teal-light text-center sm:text-left">Hello, I am</h2>
-          <h1 class="mt-2 text-center sm:text-left">Miten Chauhan</h1>
-          <h3 class="mt-2 text-center sm:text-left">It's kind of like the word "me" and the number ten</h3>
-          <div class="btn-container w-full flex flex-col justify-center items-center sm:flex-row sm:justify-between mt-12">
+          <h1 class="mt-4 xs:mt-6 sm:mt-2 text-center sm:text-left">Miten Chauhan</h1>
+          <h3 class="mt-4 xs:mt-6 sm:mt-2 text-center sm:text-left">It's kind of like the word "me" and then the number ten</h3>
+          <div class="btn-container w-full flex flex-col justify-center items-center mt-10 xs:mt-11 sm:mt-12 sm:flex-row sm:justify-between">
             <PrimaryBtn>download resume</PrimaryBtn>
             <div class="icon-btn-wrapper flex items-center justify-center mt-8 sm:mt-0">
-              <LinkedInBtn class="ml-0 sm:ml-4" />
-              <GithubBtn class="ml-4" />
-              <EmailBtn class="ml-4" />
+              <LinkedInBtn class="ml-0 md:ml-4" />
+              <GithubBtn class="ml-2 md:ml-4" />
+              <EmailBtn class="ml-2 md:ml-4" />
             </div>
           </div>
         </div>
@@ -45,12 +45,23 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .shape {
   width: 85%;
+  min-width: 810px;
   height: 100%;
-  transform: skew(42deg);
+  transform: skew(32deg);
   background: rgba(255, 255, 255, 0.05);
   position: absolute;
-  right: -35%;
+  left: 80%;
   z-index: 3;
+
+  @media (min-width: 640px) {
+    left: 60%;
+    transform: skew(42deg);
+  }
+  z-index: 3;
+
+  @media (min-width: 1280px) {
+    left: 48%;
+  }
 }
 
 .m {

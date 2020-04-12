@@ -34,10 +34,23 @@ module.exports = {
       'xs': '0.75rem',  // 12px
       'base': '1rem',   // 16px
       'lg': '1.5rem',   // 24px
+      'lg-2': '1.75rem',   // 24px
       '2lg': '2rem',    // 32px
+      '3lg': '2.5rem',  // 40px
       'xl': '3rem',     // 48px
       '2xl': '4rem',    // 64px
       '3xl': '4.5rem'   // 72px
+    },
+    screens: {
+      'xs': '375px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1366px',
+      'fhd': '1920px',
+      '2k': '2560px',
+      '4k': '3840px'
     },
     extend: {
       boxShadow: {
@@ -49,12 +62,11 @@ module.exports = {
       letterSpacing: {
         '08': '0.08em'
       },
-      screens: {
-        '2xl': '1440px',
-        'fhd': '1920px',
-        '2k': '2560px',
-        '4k': '3840px'
-      }
+      spacing: {
+        '7': '1.75rem',
+        '18': '4.5rem',
+        'inherit': 'inherit'
+      },
     }
   },
   variants: {},
