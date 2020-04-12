@@ -56,6 +56,7 @@ export default Vue.extend({
   bottom: -72px;
   transform-origin: 0 100%;
   left: 40%;
+  opacity: 0.5;
 
   &.left {
     transform: skew(30deg);

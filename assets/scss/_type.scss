@@ -51,7 +51,7 @@ p, li, span {
 }
 
 blockquote {
-  @apply text-base font-bold text-black tracking-wide;
+  @apply text-base font-bold text-teal-dark tracking-wide;
 
   @media (min-width: 640px) {
     @apply text-md;
