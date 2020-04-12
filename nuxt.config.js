@@ -123,7 +123,10 @@ export default {
   },
   pwa: {
     manifest: {
-      name: 'Miten Chauhan'
+      name: 'Miten Chauhan',
+      background_color: '#17252A',
+      short_name: 'Miten Chauhan',
+      theme_color: '#3AAFA9'
     },
     meta: {
       name: "Miten Chauhan",
