@@ -6,8 +6,8 @@
 </template>
 <script lang="ts">
 import Vue from 'vue';
-import PrimaryBtn from '~/components/PrimaryBtn';
-import CvBtn from '~/components/buttons/CvBtn';
+import PrimaryBtn from '~/components/PrimaryBtn.vue';
+import CvBtn from '~/components/buttons/CvBtn.vue';
 
 export default Vue.extend({
   components: {
@@ -27,13 +27,13 @@ export default Vue.extend({
   },
 
   computed: {
-    resumeUrl() {
+    resumeUrl(): string {
       return this.$store.state.resumeUrl;
     }
   },
 
   methods: {
-    onClickDownload() {
+    onClickDownload(): Window | null {
       console.log('click');
       return window.open(this.resumeUrl, '_blank');
     }
