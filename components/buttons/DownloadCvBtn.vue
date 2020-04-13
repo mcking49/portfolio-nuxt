@@ -34,7 +34,6 @@ export default Vue.extend({
 
   methods: {
     onClickDownload(): Window | null {
-      console.log('click');
       return window.open(this.resumeUrl, '_blank');
     }
   },
