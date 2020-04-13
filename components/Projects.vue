@@ -100,19 +100,17 @@ export default Vue.extend({
       stack: ['HTML', 'SCSS', 'Bootstrap'],
       active: false
     }
+    const p4: Project = {
+      name: 'Miten Chauhan',
+      shortName: 'Miten Chauhan',
+      url: 'https://www.mitenchauhan.com/',
+      img: 'miten-portfolio.jpg',
+      description: `Being a web developer myself, it felt wrong not having my own website! So, here it is. I created this website to showcase a little bit about me and display all the projects i've been involved in over the years as a freelancer.`,
+      stack: ['Vue / Nuxt (TS)', 'TailwindCSS'],
+      active: false
+    }
 
-    // TODO: Add this project
-    // const p4: Project = {
-    //   name: 'Miten Chauhan | Potfolio',
-    //   shortName: 'Miten | Portfolio',
-    //   url: 'https://www.mitenchauhan.com/',
-    //   img: 'portfolio.jpg',
-    //   description: ``,
-    //   stack: ['Vue / Nuxt TS', 'TailwindCSS'],
-    //   active: false
-    // }
-
-    this.projects = [p1, p2, p3];
+    this.projects = [p1, p2, p3, p4];
   },
 
   methods: {
