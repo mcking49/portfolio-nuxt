@@ -22,7 +22,7 @@
             </div>
           </div>
           <div class="col-span-5 col-start-8 relative hidden lg:block">
-            <div class="absolute h-full w-full flex items-end bottom-n18 z-10">
+            <div class="absolute h-full w-full flex items-end -bottom-18 z-10">
               <img src="~/assets/img/profile-img.png" alt="Miten" class="max-h-full" />
             </div>
             <div class="line left"></div>

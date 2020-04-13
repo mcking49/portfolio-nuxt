@@ -1,5 +1,5 @@
 <template>
-  <header ref="header" class="main-header fixed top-0 left-0 w-full bg-transparent h-16 md:h-20 z-50 transition-all duration-300 ease-in-out">
+  <header class="main-header fixed top-0 left-0 w-full bg-transparent h-16 md:h-20 z-50 transition-all duration-300 ease-in-out">
     <div class="container flex flex-row justify-between items-center h-full">
       <div class="logo flex-none h-full flex items-center">
         <nuxt-link :to="{path: '/', hash: '#home'}">
@@ -24,7 +24,7 @@ export default Vue.extend({
   },
 
   mounted() {
-    const header = this.$refs.header as Element;
+    const header = this.$el as Element;
     window.addEventListener('scroll', (e) => {
       if (window.scrollY > 0) {
         header.classList.add('scrolled');

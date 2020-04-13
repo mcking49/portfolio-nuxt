@@ -83,11 +83,15 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        default: '0 1px 3px 0 rgba(154, 154, 154, 1)'
+        default: '0 1px 3px 0 rgba(154, 154, 154, 1)',
+        fab: '5px 5px 6px 0 rgba(0, 0, 0, 0.16)'
       },
       inset: {
+        '4': '1rem',
+        '6': '1.5rem',
+        '8': '2rem',
         '1/2': '50%',
-        'n18': '-4.5rem'
+        '-18': '-4.5rem'
       },
       letterSpacing: {
         '08': '0.08em'

@@ -5,6 +5,7 @@
       <nuxt />
     </main>
     <Footer />
+    <BackToTopBtn />
   </div>
 </template>
 
@@ -12,11 +13,13 @@
 import Vue from 'vue';
 import Header from '~/components/Header.vue';
 import Footer from '~/components/Footer.vue';
+import BackToTopBtn from '~/components/buttons/BackToTopBtn.vue';
 
 export default Vue.extend({
   components: {
     Header,
-    Footer
+    Footer,
+    BackToTopBtn
   },
 
   mounted() {
