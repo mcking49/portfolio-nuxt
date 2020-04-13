@@ -90,7 +90,10 @@ module.exports = {
         '4': '1rem',
         '6': '1.5rem',
         '8': '2rem',
+        '64': '16rem',
         '1/2': '50%',
+        '-4': '-1rem',
+        '-6': '-1.5rem',
         '-18': '-4.5rem'
       },
       letterSpacing: {

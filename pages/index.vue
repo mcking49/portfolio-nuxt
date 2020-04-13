@@ -32,18 +32,29 @@
       </div>
     </section>
 
-    <!-- <section id="projects"></section> -->
+    <Projects />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import Hero from '~/components/Hero.vue';
+import Projects from '~/components/Projects.vue';
+
+interface Project {
+  name: string;
+  url: string;
+  img: string;
+  description: string;
+  stack: string[];
+  active: boolean;
+}
 
 export default Vue.extend({
   components: {
-    Hero
-  }
+    Hero,
+    Projects
+  },
 });
 </script>
 
