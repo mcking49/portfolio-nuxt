@@ -223,5 +223,9 @@ export default Vue.extend({
   &.right {
     @apply -right-6;
   }
+
+  @media (min-width: 1024px) {
+    @apply hidden;
+  }
 }
 </style>
