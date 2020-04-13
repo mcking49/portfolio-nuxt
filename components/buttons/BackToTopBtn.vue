@@ -42,7 +42,8 @@ export default Vue.extend({
     const fab = this.$el as Element;
     const header = document.getElementsByTagName('header')[0];
     window.addEventListener('scroll', (e) => {
-      if (window.scrollY > header.offsetHeight) {
+      const isFooterVisible = this.isFooterVisible();
+      if (window.scrollY > header.offsetHeight && !isFooterVisible) {
         fab.classList.remove('invisible', 'opacity-0');
       } else {
         fab.classList.add('invisible', 'opacity-0');
@@ -56,6 +57,17 @@ export default Vue.extend({
         top: 0,
         behavior: 'smooth'
       });
+    },
+
+    isFooterVisible() {
+      const footer: Element = document.getElementsByTagName('footer')[0];
+      const { top, bottom } = footer.getBoundingClientRect();
+      const vHeight = (window.innerHeight || document.documentElement.clientHeight);
+
+      return (
+        (top > 0 || bottom > 0) &&
+        top < vHeight
+      );
     }
   }
 });
