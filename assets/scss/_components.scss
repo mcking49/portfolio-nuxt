@@ -1,0 +1,77 @@
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  animation: appear 1s ease-in-out;
+}
+
+button {
+  @extend .transition;
+  @apply py-2 px-6 font-bold text-xs uppercase shadow;
+  width: 176px;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: 1366px) {
+    @apply py-3;
+  }
+}
+
+a {
+  @extend .transition;
+  @apply inline-flex;
+}
+
+section {
+  @apply py-9 bg-white overflow-hidden;
+
+  &.alt {
+    @apply bg-grey-light;
+  }
+
+  @media (min-width: 640px) {
+    @apply py-10;
+  }
+
+  @media (min-width: 1024px) {
+    @apply py-18;
+  }
+}
+
+.btn-style-none {
+  @apply p-0 shadow-none;
+}
+
+.icon-btn {
+  @apply rounded-full text-teal h-8 w-8;
+
+  &:hover {
+    @apply bg-teal text-teal-light;
+  }
+
+  svg {
+    height: inherit;
+    width: inherit;
+  }
+
+  @media (min-width: 640px) {
+    @apply h-12 w-12;
+  }
+
+  @media (min-width: 1366px) {
+    @apply h-18 w-18;
+  }
+}
+
+.row {
+  @apply grid grid-cols-1 gap-4;
+
+  @media (min-width: 640px) {
+    @apply grid-cols-4;
+  }
+
+  @media (min-width: 1024px) {
+    @apply grid-cols-12;
+  }
+}

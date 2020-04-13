@@ -8,16 +8,26 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "generate": "nuxt-ts generate",
-    "start": "nuxt-ts start"
+    "start": "nuxt-ts start",
+    "deploy:staging": "firebase deploy --only hosting:web -P default",
+    "deploy:prod": "firebase deploy --only hosting:web -P production",
+    "deploy:all": "npm run generate && npm run deploy:staging && npm run deploy:prod"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
     "@nuxt/typescript-runtime": "^0.4.0",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/firebase": "^5.0.7",
     "@nuxtjs/pwa": "^3.0.0-0",
-    "@nuxtjs/dotenv": "^1.4.0"
+    "@types/lodash": "^4.14.149",
+    "firebase": "^7.14.0",
+    "lodash": "^4.17.15",
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",
-    "@nuxtjs/tailwindcss": "^1.0.0"
+    "@nuxtjs/tailwindcss": "^1.0.0",
+    "node-sass": "^4.13.1",
+    "nuxt-purgecss": "^0.2.1",
+    "sass-loader": "^8.0.2"
   }
 }

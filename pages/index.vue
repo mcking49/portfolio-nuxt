@@ -1,78 +1,80 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        portfolio-nuxt
-      </h1>
-      <h2 class="subtitle">
-        Miten&#39;s portfolio
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <Hero />
+
+    <section id="about" class="alt">
+      <div class="container">
+        <div class="row">
+          <div class="col-span-6 z-20">
+            <div class="heading-wrapper flex justify-between items-center">
+              <h2 class="section-heading">Web<br>Developer</h2>
+              <div class="img-wrapper max-w-1/2 ml-4 max-h-32 xs:ml-8 lg:hidden">
+                <img src="~/assets/img/profile-img-mobile.png" alt="Miten" class="object-contain max-h-32" />
+              </div>
+            </div>
+
+            <blockquote class="mt-8">"The web will one day make the app store obsolete"</blockquote>
+
+            <div class="copy mt-8">
+              <p>Hi, I'm Miten! I am currently a web developer who loves to make awesome web apps using popular frontend frameworks like Angular, Vue and React. I believe that one day, the Web will make the App Store obsolete! If you disagree, add me on LinkedIn and let's have a heated debate (just kidding).</p>
+              <p class="mt-4">In my spare time I like to do a lot of things like making short highlight videos of my trips and significant events in my life, or building computers, watching too many movies and TV shows, going out adventuring, and supporting the Lakers.</p>
+              <p class="mt-4">If you would like to get to know me more, or just want to have a chat, feel free to connect with me. I would love to hear from you. In the meantime, below you will find some of the project’s I’ve worked on over the years. </p>
+            </div>
+          </div>
+          <div class="col-span-5 col-start-8 relative hidden lg:block">
+            <div class="absolute h-full w-full flex items-end -bottom-18 z-10">
+              <img src="~/assets/img/profile-img.png" alt="Miten" class="max-h-full" />
+            </div>
+            <div class="line left"></div>
+            <div class="line right"></div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <Projects />
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Logo from '~/components/Logo.vue'
+import Vue from 'vue';
+import Hero from '~/components/Hero.vue';
+import Projects from '~/components/Projects.vue';
+
+interface Project {
+  name: string;
+  url: string;
+  img: string;
+  description: string;
+  stack: string[];
+  active: boolean;
+}
 
 export default Vue.extend({
   components: {
-    Logo
-  }
-})
+    Hero,
+    Projects
+  },
+});
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="scss" scoped>
+.line {
+  height: 125%;
+  width: 4px;
+  background: white;
+  position: absolute;
+  bottom: -72px;
+  transform-origin: 0 100%;
+  left: 40%;
+  opacity: 0.5;
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+  &.left {
+    transform: skew(30deg);
+  }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  &.right {
+    transform: skew(-30deg);
+  }
 }
 </style>

@@ -1,0 +1,76 @@
+html, body {
+  @apply font-sans tracking-08;
+}
+
+h1 {
+  @apply text-2lg font-bold text-teal uppercase leading-none tracking-08;
+
+  @media (min-width: 375px) {
+    @apply text-3lg;
+  }
+
+  @media (min-width: 640px) {
+    @apply text-3xl;
+  }
+}
+
+h2 {
+  @apply text-lg font-bold text-teal-light leading-none tracking-08;
+
+  @media (min-width: 375px) {
+    @apply text-lg-2;
+  }
+
+  @media (min-width: 640px) {
+    @apply text-xl;
+  }
+}
+
+h3 {
+  @apply text-base font-bold text-teal-light uppercase leading-tight tracking-08;
+
+  @media (min-width: 640px) {
+    @apply text-lg;
+  }
+}
+
+h4 {
+  @apply text-base font-bold text-teal uppercase leading-tight tracking-08;
+}
+
+h5 {
+  @apply text-xs font-bold text-teal-dark uppercase leading-none tracking-08;
+}
+
+h6 {
+  @apply text-xxs font-bold text-teal-dark uppercase leading-none tracking-08;
+}
+
+p, li, span {
+  @apply text-base font-normal text-teal-dark leading-relaxed tracking-wide;
+}
+
+blockquote {
+  @apply text-base font-bold text-teal-dark tracking-wide;
+
+  @media (min-width: 640px) {
+    @apply text-md;
+  }
+
+  @media (min-width: 1024px) {
+    @apply text-lg-2;
+  }
+}
+
+.hero-statement {
+  @apply text-base font-normal text-teal-light leading-tight tracking-08 italic font-light;
+
+  @media (min-width: 640px) {
+    @apply text-md;
+  }
+}
+
+.section-heading {
+  @extend h2;
+  @apply text-teal leading-normal;
+}
