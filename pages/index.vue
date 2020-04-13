@@ -13,7 +13,7 @@
               </div>
             </div>
 
-            <blockquote class="mt-8">"the web will one day make the app store obsolete"</blockquote>
+            <blockquote class="mt-8">"The web will one day make the app store obsolete"</blockquote>
 
             <div class="copy mt-8">
               <p>Hi, I'm Miten! I am currently a web developer who loves to make awesome web apps using popular frontend frameworks like Angular, Vue and React. I believe that one day, the Web will make the App Store obsolete! If you disagree, add me on LinkedIn and let's have a heated debate (just kidding).</p>

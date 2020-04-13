@@ -62,6 +62,14 @@ blockquote {
   }
 }
 
+.hero-statement {
+  @apply text-base font-normal text-teal-light leading-tight tracking-08 italic font-light;
+
+  @media (min-width: 640px) {
+    @apply text-md;
+  }
+}
+
 .section-heading {
   @extend h2;
   @apply text-teal leading-normal;

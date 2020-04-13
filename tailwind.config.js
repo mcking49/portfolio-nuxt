@@ -33,7 +33,7 @@ module.exports = {
       'xxs': '0.5rem',    // 8px
       'xs': '0.75rem',    // 12px
       'base': '1rem',     // 16px
-      'md': '1.25rem',    // 16px
+      'md': '1.25rem',    // 20px
       'lg': '1.5rem',     // 24px
       'lg-2': '1.75rem',  // 24px
       '2lg': '2rem',      // 32px
