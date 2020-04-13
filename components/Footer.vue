@@ -3,7 +3,7 @@
     <div class="container flex items-center justify-between lg:justify-start">
       <p class="text-xs text-teal-light lg:text-base">Connect with me</p>
       <div class="icon-btn-wrapper flex items-center justify-center z-10 lg:ml-8">
-        <CvBtn class="ml-0 sm:h-8 sm:w-8 lg:ml-4 lg:h-13 lg:w-13" />
+        <DownloadCvBtn :icon="true" customClasses="ml-0 sm:h-8 sm:w-8 lg:ml-4 lg:h-13 lg:w-13" />
         <LinkedInBtn class="ml-2 lg:ml-4 sm:h-8 sm:w-8 lg:h-13 lg:w-13" />
         <GithubBtn class="ml-2 lg:ml-4 sm:h-8 sm:w-8 lg:h-13 lg:w-13" />
         <EmailBtn class="ml-2 lg:ml-4 sm:h-8 sm:w-8 lg:h-13 lg:w-13" />
@@ -15,14 +15,14 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import CvBtn from '~/components/buttons/CvBtn.vue';
+import DownloadCvBtn from '~/components/buttons/DownloadCvBtn.vue';
 import LinkedInBtn from '~/components/buttons/LinkedInBtn.vue';
 import GithubBtn from '~/components/buttons/GithubBtn.vue';
 import EmailBtn from '~/components/buttons/EmailBtn.vue';
 
 export default Vue.extend({
   components: {
-    CvBtn,
+    DownloadCvBtn,
     LinkedInBtn,
     GithubBtn,
     EmailBtn

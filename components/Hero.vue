@@ -12,7 +12,7 @@
           <h1 class="mt-4 xs:mt-6 sm:mt-2 text-center sm:text-left">Miten Chauhan</h1>
           <h3 class="mt-4 xs:mt-6 sm:mt-2 text-center sm:text-left">It's kind of like the word "me" and then the number ten</h3>
           <div class="btn-container w-full flex flex-col justify-center items-center mt-10 xs:mt-11 sm:mt-12 sm:flex-row sm:justify-between">
-            <PrimaryBtn>download resume</PrimaryBtn>
+            <DownloadCvBtn></DownloadCvBtn>
             <div class="icon-btn-wrapper flex items-center justify-center mt-8 sm:mt-0">
               <LinkedInBtn class="ml-0 md:ml-4" />
               <GithubBtn class="ml-2 md:ml-4" />
@@ -27,14 +27,14 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import PrimaryBtn from '~/components/PrimaryBtn.vue';
+import DownloadCvBtn from '~/components/buttons/DownloadCvBtn.vue';
 import LinkedInBtn from '~/components/buttons/LinkedInBtn.vue';
 import GithubBtn from '~/components/buttons/GithubBtn.vue';
 import EmailBtn from '~/components/buttons/EmailBtn.vue';
 
 export default Vue.extend({
   components: {
-    PrimaryBtn,
+    DownloadCvBtn,
     LinkedInBtn,
     GithubBtn,
     EmailBtn

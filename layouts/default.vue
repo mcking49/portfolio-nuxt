@@ -17,6 +17,10 @@ export default Vue.extend({
   components: {
     Header,
     Footer
+  },
+
+  mounted() {
+    this.$store.dispatch('getResume');
   }
 });
 </script>
