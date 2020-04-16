@@ -13,8 +13,6 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@master
-    - name: Build Hugo
-      uses: lowply/build-hugo@v0.68.3
     - name: Install
       run: npm install
     - name: Build app
