@@ -1,11 +1,11 @@
-name: Build and Deploy
+name: Deploy to Production
 on:
   push:
     branches:
     - master
 jobs:
   main:
-    name: Build and Deploy
+    name: Deploy to Production
     runs-on: ubuntu-latest
     strategy:
       matrix:
