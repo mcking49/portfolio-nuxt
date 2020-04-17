@@ -12,7 +12,9 @@ jobs:
         node-version: [12.x]
     steps:
     - name: Check out code
-      uses: actions/checkout@develop
+      uses: actions/checkout@v2
+      with:
+        ref: develop
     - name: Install
       run: npm install
     - name: Build app
