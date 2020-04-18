@@ -1,4 +1,6 @@
-# portfolio-nuxt
+![Deploy to Production](https://github.com/mcking49/portfolio-nuxt/workflows/Deploy%20to%20Production/badge.svg?branch=master)
+
+# Portfolio
 
 > Miten&#39;s portfolio
 
