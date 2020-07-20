@@ -20,7 +20,7 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "@types/lodash": "^4.14.149",
     "firebase": "^7.14.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
