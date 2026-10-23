@@ -6,13 +6,17 @@ on:
 jobs:
   main:
     name: Deploy to Production
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         node-version: [12.x]
     steps:
     - name: Check out code
       uses: actions/checkout@master
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
     - name: Install
       run: npm install
     - name: Build app
